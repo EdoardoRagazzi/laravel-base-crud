@@ -10942,3 +10942,33 @@ a.text-dark:focus {
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  background-color: cornflowerblue;
+}
+
+ul li {
+  padding: 20px;
+}
+
+ul a {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.text {
+  height: 100vh;
+  text-align: center;
+}
+
+.text h1 {
+  line-height: 100vh;
+  text-align: center;
+}
+
