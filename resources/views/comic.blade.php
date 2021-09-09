@@ -5,7 +5,7 @@
 
     <div class="title">
         <div class="text">
-        <h1 class="text-uppercase">All</h1>
+        <h1 class="text-uppercase">Insert how many comics you like</h1>
     </div>
     </div>
 

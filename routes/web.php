@@ -12,10 +12,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// crea get post show edit del database creato tramite il controller del db
 Route::resource('/comics','ComicController');
 
 Route::get('/','HomeController@index')->name('homepage');
 
+Route::get('/comic','HomeController@insert')->name('insertpage');
+
 // route for comics.index 
 Route::get('/comics', 'ComicController@index')->name('comics.index');
+
+Route::get('/comics/show', 'ComicController@show')->name('comics.show');
+
 
