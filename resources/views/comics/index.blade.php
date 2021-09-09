@@ -8,32 +8,36 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
+                    <th scope="col">Titolo</th>
+                    <th scope="col">Tipo</th>
                     <th scope="col">Handle</th>
                   </tr>
                 </thead>
                 <tbody>
+                    @foreach ($comics as $comic )
+                        
+                   
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
+                    <th scope="row">{{$comic->id}}</th>
+                    <td>{{$comic->title}}</td>
+                    <td>{{$comic->type}}</td>
+                    <td>
+                        <a href="" class="btn btn-primary">Show</a>
+                        <a href="" class="btn btn-primary">Edit</a>
+                        <a href="" class="btn btn-primary">Delete</a>
+                       
+                    </td>
+                    @endforeach
+
+                   
+               
                 </tbody>
               
         </table>
+        <div>
+            {{$comics->links()}}
+        </div>
        </div>
+       
 
 @endsection
