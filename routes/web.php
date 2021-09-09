@@ -20,8 +20,6 @@ Route::get('/','HomeController@index')->name('homepage');
 Route::get('/comic','HomeController@insert')->name('insertpage');
 
 // route for comics.index 
-Route::get('/comics', 'ComicController@index')->name('comics.index');
 
-Route::get('/comics/show', 'ComicController@show')->name('comics.show');
 
 
