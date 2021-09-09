@@ -4,9 +4,7 @@
             <li class="nav-item">
               <a class="nav-link active" href="{{route('homepage')}}">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{route('travelpage')}}">Travel</a>
-            </li>
+           
           
            
           </ul>

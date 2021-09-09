@@ -12,7 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::resource('/comics','ComicController');
 
 Route::get('/','HomeController@index')->name('homepage');
 
-Route::get('/travels','TravelController@travels')->name('travelpage');
+// route for comics.index 
+Route::get('/comics', 'ComicController@index')->name('comics.index');
+

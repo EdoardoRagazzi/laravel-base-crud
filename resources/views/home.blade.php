@@ -1,11 +1,11 @@
 @extends('layouts.app')
-@section ('title', 'Travel Agency')
+@section ('title', 'Comics')
 
 @section ('main')
 
     <div class="title">
         <div class="text">
-        <h1 class="text-uppercase">Travel Agency</h1>
+        <h1 class="text-uppercase">Comics Database</h1>
     </div>
     </div>
 
