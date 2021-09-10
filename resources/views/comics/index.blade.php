@@ -3,6 +3,14 @@
 
 @section ('main')
        <div class="container-fluid">
+         <p>
+           @if (session('update'))
+           <div class="alert alert-success">
+             {{session('update')}}
+           </div>
+             
+           @endif
+         </p>
         <table class="table table-dark table-striped">
             
                 <thead>
@@ -23,7 +31,7 @@
                     <td>{{$comic->type}}</td>
                     <td>
                         <a href="{{ route('comics.show', [$comic->id]) }}" class="btn btn-success">Show</a>
-                        <a href="" class="btn btn-secondary">Edit</a>
+                        <a href="{{ route('comics.edit', [$comic->id]) }}" class="btn btn-warning">Edit</a>
                         <a href="" class="btn btn-danger">Delete</a>
                        
                     </td>
