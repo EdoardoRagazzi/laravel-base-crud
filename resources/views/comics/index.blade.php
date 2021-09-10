@@ -22,9 +22,9 @@
                     <td>{{$comic->title}}</td>
                     <td>{{$comic->type}}</td>
                     <td>
-                        <a href="{{ route('comics.show', [$comic->id]) }}" class="btn btn-primary">Show</a>
-                        <a href="" class="btn btn-primary">Edit</a>
-                        <a href="" class="btn btn-primary">Delete</a>
+                        <a href="{{ route('comics.show', [$comic->id]) }}" class="btn btn-success">Show</a>
+                        <a href="" class="btn btn-secondary">Edit</a>
+                        <a href="" class="btn btn-danger">Delete</a>
                        
                     </td>
                     @endforeach

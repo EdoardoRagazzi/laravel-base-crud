@@ -26,7 +26,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        return view('comics.create');
     }
 
     /**
@@ -37,7 +37,7 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -49,8 +49,11 @@ class ComicController extends Controller
      public function show(Comic $comic)
     {
         //  $comic = Comic::find($id);
-      
+      if($comic){
         return view('comics.show', compact('comic'));
+      }
+    //   so if comic hasn't an id it will appear the page 404
+        abort('404');
     }
 
     /**
