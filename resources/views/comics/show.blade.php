@@ -6,10 +6,20 @@
   
   <div class="card">
     <div class="card-body">
-      <h5 class="card-title">{{ $comic->title }}</h5>
-      <p class="card-text">{{ $comic->description }}</p>
-      <a href="#" class="btn btn-primary">{{ $comic->type }}</a>
-    </div>
+      <ul><h5 class="card-title">Titolo : {{ $comic->title }}</h5>
+        <li><p class="card-text">Description : {{ $comic->description }}</p>
+          <li><p>Type : {{ $comic->type }}</p>
+            <li><p>Series : {{ $comic->series }}</p>
+              <li><p>Price : {{ $comic->price }}</p>
+
+              </li>
+            </li>
+          </li>
+        </li>
+      </ul>
+      
+      
+      
   </div>
 
 </div>

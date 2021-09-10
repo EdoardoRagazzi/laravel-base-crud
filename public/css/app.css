@@ -10948,15 +10948,27 @@ a.text-dark:focus {
   box-sizing: border-box;
 }
 
-ul {
+.container-fluid ul,
+.container-sm ul,
+.container-md ul,
+.container-lg ul,
+.container-xl ul {
   background-color: cornflowerblue;
 }
 
-ul li {
+.container-fluid ul li,
+.container-sm ul li,
+.container-md ul li,
+.container-lg ul li,
+.container-xl ul li {
   padding: 20px;
 }
 
-ul a {
+.container-fluid ul a,
+.container-sm ul a,
+.container-md ul a,
+.container-lg ul a,
+.container-xl ul a {
   color: black;
   font-size: 20px;
   text-transform: uppercase;
